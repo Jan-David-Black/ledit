@@ -1,0 +1,23 @@
+input#lumise-letter-spacing{
+    display: none;
+    }
+    
+    div#lumise-text.lumise-tab-body-wrp.smooth.active > span:nth-child(-n+12){
+    display: none !important;
+    }
+    
+    div#lumise-text.lumise-tab-body-wrp.smooth.active > div > span:nth-child(1){
+    display: none !important;
+    }
+    
+    ul#lumise-text-tools> li:nth-child(3){
+    display: none !important;
+    }
+    
+    ul#lumise-text-tools>li:nth-child(2)>ul>li:nth-child(4),ul#lumise-text-tools>li:nth-child(2)>ul>li:nth-child(5){
+    display: none !important;
+    }
+    
+    .lumisex-android-close{
+    display: none !important;
+    }
