@@ -1,0 +1,23 @@
+input#ledit-letter-spacing{
+    display: none;
+    }
+    
+    div#ledit-text.ledit-tab-body-wrp.smooth.active > span:nth-child(-n+12){
+    display: none !important;
+    }
+    
+    div#ledit-text.ledit-tab-body-wrp.smooth.active > div > span:nth-child(1){
+    display: none !important;
+    }
+    
+    ul#ledit-text-tools> li:nth-child(3){
+    display: none !important;
+    }
+    
+    ul#ledit-text-tools>li:nth-child(2)>ul>li:nth-child(4),ul#ledit-text-tools>li:nth-child(2)>ul>li:nth-child(5){
+    display: none !important;
+    }
+    
+    .lumisex-android-close{
+    display: none !important;
+    }

@@ -35,18 +35,18 @@ function testImg() {
         include_base = false,
         full = true,
         overflow = false,
-        stage = lumise.stage(),
+        stage = ledit.stage(),
         func = "download";
     
-    lumise.get.el('zoom').val('100').trigger('input');
+    ledit.get.el('zoom').val('100').trigger('input');
 
-    lumise.f("checking your design");	
+    ledit.f("checking your design");	
 
-    var psize = lumise.get.size();
+    var psize = ledit.get.size();
     
-    lumise.fn.uncache_large_images(function() {
+    ledit.fn.uncache_large_images(function() {
                 
-        lumise.fn.download_design({
+        ledit.fn.download_design({
             type: 'png',
             orien: psize.o,
             height: psize.h,
@@ -58,17 +58,17 @@ function testImg() {
                 *	 Revert cache of large images
                 */
                 
-                lumise.fn.uncache_large_images(null, true);
+                ledit.fn.uncache_large_images(null, true);
                 if (data.length < 10)
-                    return alert(lumise.i(36));
+                    return alert(ledit.i(36));
 
                 
                 postData('http://localhost:8000', data.replace("data:image/png;base64,",""))
                 .then(data => {
                   console.log(data); // JSON data parsed by `data.json()` call
-                  if(data === "True"){lumise.cart.add_cart('button add cart click');
+                  if(data === "True"){ledit.cart.add_cart('button add cart click');
                   }else{alert("Your design is not sufficiently connected")}
-                  lumise.f();
+                  ledit.f();
                 });
             }	
         });
@@ -76,4 +76,4 @@ function testImg() {
     });
 
 }
-$('#lumise-cart-action').click(testImg);
+$('#ledit-cart-action').click(testImg);
